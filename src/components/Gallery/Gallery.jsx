@@ -1,12 +1,9 @@
 import css from "./Gallery.module.css";
 const images = [
-  "src/img/gallery5.jpg",
-  "src/img/gallery2.jpg",
-  "src/img/gallery4.jpg",
-
-  "src/img/gallery1.jpg",
-  // "src/img/gallery3.jpg",
-  ,
+  "/img/gallery5.jpg",
+  "/img/gallery2.jpg",
+  "/img/gallery4.jpg",
+  "/img/gallery1.jpg",
 ];
 
 function Gallery() {
