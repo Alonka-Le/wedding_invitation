@@ -1,0 +1,30 @@
+.countdown {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 1240px;
+  margin: 20px auto;
+}
+
+.countdown h2 {
+  font-size: 40px;
+  color: #810000;
+  margin-bottom: 10px;
+}
+
+.timeBox {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.timeBox span {
+  border: 2px solid rgba(194, 165, 0, 0.725);
+  padding: 30px;
+  border-radius: 50%;
+  font-size: 36px;
+  font-weight: bold;
+  color: #0a1904;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}

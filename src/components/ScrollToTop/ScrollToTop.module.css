@@ -1,0 +1,19 @@
+.scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 30px;
+  background-color: rgba(194, 165, 0, 0.725);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s;
+  font-size: 28px;
+}
+
+.scrollTop:hover {
+  background-color: rgb(194, 165, 0);
+}
