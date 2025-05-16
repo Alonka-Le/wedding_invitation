@@ -1,7 +1,7 @@
 .hero {
 }
 .titleText {
-  background-image: url("src/img/hero_beckground.jpg");
+  background-image: url("/img/hero_beckground.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
