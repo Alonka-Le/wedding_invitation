@@ -1,22 +1,28 @@
-import { useState } from "react";
-
-// import  "./App.css";
-import Hero from "../Hero/Hero";
-import Countdown from "../Countdown/Countdown";
-import RSVPForm from "../RSVPForm/RSVPForm";
-import Gallery from "../Gallery/Gallery";
-import Navigation from "../Navigtion/Navigation";
-import ScrollToTop from "../ScrollToTop/ScrollToTop";
+import css from "./App.module.css";
+import Hero from "../Hero/Hero.jsx";
+import Countdown from "../Countdown/Countdown.jsx";
+import RSVPForm from "../RSVPForm/RSVPForm.jsx";
+import Gallery from "../Gallery/Gallery.jsx";
+import Navigation from "../Navigtion/Navigation.jsx";
+import ScrollToTop from "../ScrollToTop/ScrollToTop.jsx";
+import GiftList from "../GiftList/GiftList.jsx";
+import WeddingColorSection from "../WeddingColorSection/WeddingColorSection.jsx";
+import WeddingFAQ from "../WeddingFAQ/WeddingFAQ.jsx";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className={css.app}>
       {/* <Header /> */}
       <Navigation />
       <Hero />
       <Gallery />
       <Countdown />
       <RSVPForm />
+      {/* <GiftList /> */}
+      <WeddingFAQ />
+      <WeddingColorSection />
       <ScrollToTop />
     </div>
   );

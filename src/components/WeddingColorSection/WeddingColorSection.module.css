@@ -1,0 +1,103 @@
+section {
+  padding: 40px 10px;
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+.heading {
+  font-size: 40px;
+  color: #810000;
+  margin: 40px 10px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.card {
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #e8c9cd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  aspect-ratio: 1/1;
+}
+
+.card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.colorBlock {
+  height: 150px;
+  width: 100%;
+}
+
+/* Декор */
+.decorTopLeft,
+.decorBottomRight {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  opacity: 0.2;
+}
+
+/* === Desktop 1440px+ === */
+@media (min-width: 1440px) {
+  section {
+    max-width: 1440px;
+  }
+  .heading {
+    font-size: 48px;
+  }
+
+  .grid {
+    gap: 20px;
+  }
+
+  .colorBlock {
+    height: 180px;
+  }
+}
+
+/* === Tablet 600px–1024px === */
+@media (max-width: 1024px) and (min-width: 600px) {
+  section {
+    max-width: 768px;
+  }
+  .heading {
+    font-size: 32px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+  }
+
+  .colorBlock {
+    height: 140px;
+  }
+}
+
+/* === Mobile 320px–599px === */
+@media (max-width: 599px) {
+  .heading {
+    font-size: 24px;
+    /* margin: 20px 5px; */
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  /* .colorBlock {
+    height: 100px;
+  } */
+}

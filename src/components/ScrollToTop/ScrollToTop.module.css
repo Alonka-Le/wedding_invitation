@@ -2,18 +2,35 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  padding: 30px;
-  background-color: rgba(194, 165, 0, 0.725);
+  width: 150px;
+  height: 80px;
+  background-color: rgba(194, 165, 0, 0.8);
   color: white;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-  transition: opacity 0.3s;
-  font-size: 28px;
+  transition: opacity 0.3s, background-color 0.3s, transform 0.3s;
+  z-index: 999;
 }
 
 .scrollTop:hover {
   background-color: rgb(194, 165, 0);
+  transform: scale(1.1);
+}
+
+/* --- Адаптація для менших екранів (мобільні) --- */
+@media (max-width: 599px) {
+  .scrollTop {
+    width: 70px;
+    height: 55px;
+    font-size: 12px;
+  }
+}
+
+/* --- Приховати кнопку, коли не потрібна --- */
+.scrollTop.hidden {
+  opacity: 0;
+  pointer-events: none;
 }

@@ -1,4 +1,5 @@
 .hero {
+  margin: 0 auto;
 }
 .titleText {
   background-image: url("/img/hero_beckground.jpg");
@@ -9,41 +10,89 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-content: center;
+  text-align: center;
   padding: 100px;
 }
+
 .title {
   padding: 100px 0;
   font-family: "Lobster", sans-serif;
   font-size: 72px;
-  color: #810000;
+  color: rgb(129, 0, 0);
   margin: 0;
 }
+
 .invitationOne {
   font-family: "Great Vibes", cursive;
   font-size: 42px;
   color: #810000;
-
   margin: 0;
 }
+
 .titleNiceWords {
-  padding: 50px 0;
+  padding: 50px 10px;
 }
 
-/* .container {
-  display: flex;
-  text-align: center;
+/* --- Desktop Full HD (1440px+) --- */
+@media (min-width: 1440px) {
+  .hero {
+    width: 1440px;
+  }
+  .titleText {
+    padding: 100px;
+  }
+
+  .title {
+    font-size: 72px;
+  }
+
+  .invitationOne {
+    font-size: 42px;
+  }
+  .br {
+    display: none;
+  }
 }
-/* .container::before {
-  content: "";
-  position: absolute;
-  left: 345px;
-  top: 160px;
-  width: 2px;
-  height: 600px;
-  background-color: rgb(255, 255, 255);
-} */
-/* .img {
-  width: 300px;
-  height: 450px;
-} */
+
+/* --- Tablet / Middle screens (600px – 1024px) --- */
+@media (max-width: 1024px) and (min-width: 600px) {
+  .hero {
+    width: 600px;
+  }
+  .titleText {
+    padding: 70px;
+  }
+
+  .title {
+    font-size: 52px;
+    padding: 70px 0;
+  }
+
+  .invitationOne {
+    font-size: 32px;
+  }
+}
+
+/* --- Mobile (320px – 599px) --- */
+@media (max-width: 599px) {
+  .hero {
+    width: 365px;
+  }
+  .titleText {
+    padding: 40px 20px;
+    background-size: cover;
+  }
+
+  .title {
+    font-size: 36px;
+    padding: 40px 0;
+  }
+
+  .invitationOne {
+    font-size: 24px;
+  }
+
+  .titleNiceWords {
+    padding: 30px 0;
+  }
+}

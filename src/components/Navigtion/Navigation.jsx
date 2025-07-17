@@ -5,9 +5,6 @@ function Navigation() {
       <a className={css.item} href="#invitation">
         Запрошення
       </a>
-      <a className={css.item} href="#location">
-        Локація
-      </a>
       <a className={css.item} href="#confirm">
         Підтвердити присутність
       </a>

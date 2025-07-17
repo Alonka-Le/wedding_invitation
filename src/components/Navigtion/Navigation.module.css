@@ -4,9 +4,54 @@
   gap: 50px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap; /* Дозволяє переносити елементи */
+
+  margin: 0 auto;
 }
+
 .item {
-  color: #ffff;
+  color: #ffffff;
   font-size: 24px;
   padding: 20px 0;
+  text-align: center;
+}
+
+/* --- Desktop 1440px+ --- */
+@media (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+    gap: 50px;
+    width: 1440px;
+  }
+
+  .item {
+    font-size: 24px;
+  }
+}
+
+/* --- Tablet 600px–1024px (764px в тому числі) --- */
+@media (max-width: 1024px) and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    gap: 30px;
+    width: 600px;
+  }
+
+  .item {
+    font-size: 20px;
+  }
+}
+
+/* --- Mobile 320–599px --- */
+@media (max-width: 599px) {
+  .container {
+    flex-direction: column;
+    gap: 0px;
+    width: 365px;
+  }
+
+  .item {
+    font-size: 14px;
+    padding: 5px 0;
+  }
 }
