@@ -1,7 +1,8 @@
 import { useId, useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
+
 import css from "./RSVPForm.module.css";
 
 const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
