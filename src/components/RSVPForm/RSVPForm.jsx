@@ -74,7 +74,7 @@ function RSVPForm() {
           <ErrorMessage name="userName" component="span" />
 
           <label htmlFor={surnameFieldId} className={css.nameFieldId}>
-            Вкажіть Вашу фамілію
+            Вкажіть Ваше призвіще
           </label>
           <Field
             className={css.input}
