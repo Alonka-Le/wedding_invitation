@@ -29,6 +29,11 @@ function RSVPForm() {
   const [status, setStatus] = useState("");
 
   const handleSubmit = (values, actions) => {
+    console.log({
+      serviceID,
+      templateID,
+      publicKey,
+    });
     const templateParams = {
       user_name: values.userName,
       user_surname: values.surname,
